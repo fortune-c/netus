@@ -14,7 +14,7 @@ void launch(struct Server *server) {
                   "Last-Modified: Sat, 28 Feb 2026 6:32:01GMT\n"
                   "Content-Type: text/html\n"
                   "Connection: close\n\n"
-                  "<html><body><h1>Homo Deus</h1></body></html>";
+                  "<html><body><h1>Fortuna</h1></body></html>";
     int addr_len = sizeof(server->address);
     int new_sock;
     while (1){
