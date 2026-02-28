@@ -10,7 +10,7 @@
 void launch(struct Server *server) {
     while (1){
         char buffer[30000];
-        printf("=== WAITING FOR CONNECTION ==== ");
+        printf("=== WAITING FOR CONNECTION ====\n");
         int addr_len = sizeof(server->address);
         int new_sock = accept(server->socket,(struct sockaddr *)&server->address, (socklen_t *)&addr_len);
         int bytes_read = read(new_sock, buffer, 29999);
@@ -26,6 +26,6 @@ void launch(struct Server *server) {
 }
 
 int main() {
-    struct Server servers = server(AF_INET, SOCK_STREAM, 0, INADDR_ANY, 80, 10, launch);
+    struct Server servers = server(AF_INET, SOCK_STREAM, 0, INADDR_ANY, 8000, 10, launch);
     servers.launch(&servers);
 }
