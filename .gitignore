@@ -1,0 +1,89 @@
+# =========================
+# Compiled Object Files
+# =========================
+*.o
+*.obj
+*.lo
+*.slo
+
+# =========================
+# Executables
+# =========================
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# If your compiled binary has no extension (Linux/macOS)
+myprogram
+a.out
+
+# =========================
+# Static & Dynamic Libraries
+# =========================
+*.a
+*.la
+*.lib
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# =========================
+# Debug Files
+# =========================
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# =========================
+# Build Directories
+# =========================
+build/
+bin/
+dist/
+Debug/
+Release/
+
+# =========================
+# CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# =========================
+# Autotools
+# =========================
+autom4te.cache/
+aclocal.m4
+config.log
+config.status
+configure
+libtool
+m4/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
