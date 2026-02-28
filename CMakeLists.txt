@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 11)
 add_executable(web_server
         server/server.c
         server/server.h
-        server/test.c)
+        server/test.c
+        http-requests/request.c)
