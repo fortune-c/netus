@@ -6,16 +6,23 @@
 #define WEB_SERVER_REQUEST_H
 
 enum http_methods {
-    HTTP_METHOD_GET,
-    HTTP_METHOD_POST,
-    HTTP_METHOD_PUT,
-    HTTP_METHOD_DELETE,
-    HTTP_METHOD_PATCH,
-    HTTP_METHOD_HEAD,
-    HTTP_METHOD_OPTIONS,
-    HTTP_METHOD_TRACE,
-    HTTP_METHOD_CONNECT,
-    HTTP_METHOD_UNKNOWN
-}
+    GET,
+    POST,
+    PUT,
+    DELETE,
+    PATCH,
+    HEAD,
+    OPTIONS,
+    TRACE,
+    CONNECT
+};
+
+struct http_request {
+    int method;
+    char *uri;
+    float http_version;
+};
+
+struct http_request http_request_construct(char *request_string);
 
 #endif //WEB_SERVER_REQUEST_H
