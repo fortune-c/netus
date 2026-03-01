@@ -12,10 +12,10 @@
 #ifndef WEB_SERVER_QUEUE_H
 #define WEB_SERVER_QUEUE_H
 
-#include "lin.h"
+#include "linkedlist.h"
 
 
-// MARK: DATA TYPES
+// DATA TYPES
 
 // Queues are used to access a linked list in a controlled manner.
 struct Queue
