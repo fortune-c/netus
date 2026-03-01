@@ -41,4 +41,5 @@ add_executable(web_server
         cryptography/multiprecision/ArbitrarilyPreciseInteger.c
         cryptography/multiprecision/ArbitrarilyPreciseInteger.h
         lib/cryptography.h
+        nodes/server/test.c
 )
