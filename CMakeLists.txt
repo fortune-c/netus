@@ -8,4 +8,10 @@ add_executable(web_server
         server/server.h
         server/test.c
         http-requests/request.c
-        http-requests/request.h)
+        http-requests/request.h
+        dsa/lists/queue.c
+        dsa/lists/queue.h
+        dsa/lists/linkedlist.c
+        dsa/lists/linkedlist.h
+        dsa/common/node.c
+        dsa/common/node.h)
